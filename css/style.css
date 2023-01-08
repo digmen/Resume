@@ -1,0 +1,459 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* Отлключение отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Отключение отступов у заголовков */
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+/* Контейнер */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Плавная прокрутка */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Челка сайта */
+.navbar {
+    position: relative;
+    top: 0; 
+    animation: navbar 2.5s ;
+    animation-name: navbar;
+    z-index: 1;
+}
+/* Блок для флекс элементов и фона в navbar  */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(48, 48, 48);
+    border-radius: 0px 0px 10px 10px;
+    margin: 0 auto;
+    width: 800px;
+    height: 60px;
+    box-shadow: 0px 0px 30px black;
+}
+/* Текст котрорый находиться в челке */
+.nav-item a{
+    color: whitesmoke;
+    font-family: var(--main-family);
+    text-decoration: none;
+}
+
+/* Блок про меня */
+.johny {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: johny-anime 2.5s;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+}
+/* Размеры и цвет карточки */
+.johny-title {
+    width: 800px;
+    height: 400px;
+    background-color: rgb(236, 235, 230);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgb(236, 235, 230) ;
+
+}
+
+
+/* расположение иконок */
+.johny-icons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+/* размер иконок */
+.johny-icon img {
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+}
+
+/* текст иконок */
+.johny-icon {
+    display: flex;
+    font-family: var(--main-family);
+    text-decoration: none;
+    color: black;
+}
+/* Расположения текста  */
+.johny-title__text {
+    padding-top: 50px;
+    padding-left: 50px;
+
+}
+/* Размер и шрифт текста */
+.johny-title__text h2 {
+    font-family: var(--main-family);
+    font-size: 100px;
+}
+/* Размер и шрифт текста */
+.johny-title__text p {
+    font-family: var(--main-family);
+    font-size: 32px;
+}
+/* Расположения фото */
+.photo-johny {
+    margin: -285px 350px;
+}
+/* Размеры фото */
+.photo-johny img {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    border: 20px solid  rgb(223, 221, 211);
+}
+
+/* БЛок обо мне */
+.about-me {
+    margin-top: 50px;
+    position: relative;
+    top: 0px; 
+    animation: about-me 2.5s ;
+    animation-name: about-me;
+}
+
+/* расположения текст блока */
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 800px;
+    height: 150px;
+    background-color: rgb(236, 235, 230);
+    border-radius: 2px;
+    box-shadow: 0px 0px 30px rgb(236, 235, 230) ;
+}
+
+/* заголовок */
+.about-text__h2 {
+    padding-top: 20px;
+    border-bottom: 2px solid   rgb(223, 221, 211);
+    font-family: var(--main-family);
+}
+
+/* пораграф */
+.about-text p {
+    padding-top: 20px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    font-family: var(--main-family);
+}
+
+/* Блок про полученные знания */
+.education {
+    margin-top: 100px;
+}
+
+/* размер блока */
+.education-title {
+    width: 1200px;
+    height: 400px;
+}
+
+/* Размер и расположения текста */
+.education-h2 {
+    display: flex;
+    font-family: var(--main-family);
+    font-size: 32px;
+    font-weight: 700;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+/* Отступы между блоками */
+.education-title {  
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+/* Блоки , цвета , расположения и анимация */
+.education-block {
+    background-color:rgb(68, 68, 68);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 5px;
+    color:#f6eee0 ;
+    font-family: var(--main-family);
+    padding-top: 30px ;
+    transition: all 2s linear 0.1s;
+}
+
+/* Включение анимации */
+.education-block:hover {
+    margin-top: -50px;
+    cursor: pointer;
+    transition: all 1s linear 0.1s;
+}
+
+/* Блок отвечающий за отступ внутри блока */
+.education-block h3{
+   padding-top: 10px;
+}
+
+/* Расположение пораграфа */
+.education-block p{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--main-family);
+    font-weight: 400;
+    font-size: 20px;
+    color:#f6eee0;
+ }
+ 
+
+/* Блок и его расположения */
+.skills {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+/* Расположение заголовка и размеры */
+.skills-h2 {
+    font-family: var(--main-family);
+    color: rgb(68, 68, 68);
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Наименование скил бара */
+.skill-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(68, 68, 68);
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-family: var(--main-family);
+}
+/*  цвет и размер скил бара */
+.skill-bar {
+    height: 14px;
+    background: rgb(68, 68, 68);
+    border-radius: 3px;
+    font-family: var(--main-family);
+}
+
+/* Цвет и размер полоски внутри скил бара */
+.skill-per {
+    height: 14px;
+    background: tomato;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+/* Фнимация скил бара */
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+/* конец анимации скил бара */
+.skill-per::after {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: #f1f1f1;
+    top: -18px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 1px;
+}
+
+/* Блок интересов */
+.interest {
+    display: flex;
+    justify-content: center;
+}
+
+/* Загаловок расположение и цве */
+.interest-title__h2 {
+    font-family: var(--main-family);
+    color: rgb(68, 68, 68);
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Блок отвечающий за фон */
+.interers-tiitle__items {
+    margin-top: 50px;
+    background-color:rgb(68, 68, 68);
+    width: 600px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+/* Текст внутри блока */
+.interers-tiitle__items p {
+    padding: 40px 100px 0px 100px;
+    font-family: var(--main-family);
+    font-size: 20px;
+    color:#f6eee0;
+}
+
+/* Текст что права защищены */
+.copyright {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Иконка copyright */
+.copyright img{
+    width: 20px;
+    height: 20px;
+    opacity: 0.1;
+    margin-right: 10px;
+}
+
+/* Текст */
+.copyright  h2{
+    font-family: var(--main-family);
+    font-size: 20px;
+    color:rgba(68, 68, 68, 0.205);
+}
+
+
+/* Кнопка вверх */
+.btn-up{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+   
+}
+
+/* Изображение кнопики вверх */
+.btn-up img {
+    width: 40px;
+    height: 40px;
+    
+}
+
+/* Анимация скил бара */
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Анимация navbar */
+@keyframes navbar {
+    0% {
+        top: -65px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+/* Анимация карточки  */
+@keyframes johny-anime {
+    0% {
+        opacity: 0;
+        top: 40px;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+/* Анимация карточки обо мне */
+@keyframes about-me{
+    0% {
+        opacity: 0;
+        top: -20px;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+/* Начало адпатации */
+
+/* Адаптив для 1200px */
+@media all and (max-width:1200px) {
+    .education-title {
+        width: 1100px;
+        height: 400px;
+    }
+}
+
+@media all and (max-width:1100px) {
+    .education-title {
+        width: 1000px;
+        height: 400px;
+    }
+}
+
+
+@media all and (max-width:1000px) {
+    .education-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+        margin-top: 400px;
+        padding-right: 30px;
+    }
+
+    .skills {
+        margin-top: 400px;
+    }
+
+}
+
